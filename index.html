@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started</title>    
+	<!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7f150bd29b.js" crossorigin="anonymous"></script>    
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- APP -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- IMPORT VUETIFY AND MATERIAL DESIGN FONTS AND ICONS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+<body>
+	<v-app id="app">
+        <v-file-input
+            accept="image/*"
+            label="File input"
+        ></v-file-input>
+    </v-app>
+
+	<!-- JS LIBRARIES -->
+    	<!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    	<!-- Axios -->
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<!-- Vuetify -->
+	<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+	<script>
+        const electron = require('electron');
+        const { ipcRenderer } = electron;
+		var vm = new Vue({
+			el: '#app',
+			vuetify: new Vuetify(),
+			data() {
+				return {
+					msg: 'I am Tim',
+                    
+				}
+			}
+		})
+	</script>
+</body>
